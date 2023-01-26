@@ -3,19 +3,16 @@
 @font-face {
   font-family: NunitoSans-Regular;
   src: url(/fonts/NunitoSans-Regular.ttf);
-  src: local(NunitoSans-Regular) url(/fonts/NunitoSans-Regular.ttf);
 }
 
 @font-face {
   font-family: NunitoSans-Italic;
   src: url(/fonts/NunitoSans-Italic.ttf);
-  src: local(NunitoSans-Regular) url(/fonts/NunitoSans-Italic.ttf);
 }
 
 @font-face {
   font-family: YesevaOne-Regular;
   src: url(/fonts/YesevaOne-Regular.ttf);
-  src: local(YesevaOne-Regular) url(/fonts/YesevaOne-Regular.ttf);
 }
 
 body {
@@ -90,7 +87,8 @@ a {
   .info__box {
     margin-left: 18px;
   }
-} */  /* Что-то не работает */
+} */
+/* Что-то не работает */
 
 @media screen and (max-width: 1080px) {
   .hf__right button {
@@ -112,7 +110,7 @@ a {
     margin-left: 0px;
   }
 
-  .pic__room__btns {
+  .pic__room--btns {
     flex-direction: column;
     margin-top: 16px;
     max-width: 100%;
@@ -239,7 +237,7 @@ a {
   padding-top: 19px;
 }
 
-.pic__room__btns {
+.pic__room--btns {
   display: flex;
   column-gap: 20px;
   margin-top: 41px;
@@ -280,13 +278,13 @@ a {
   color: rgb(255 255 255 / 0.3);
 }
 
-.gallery__txt__ref {
+.gallery__txt--ref {
   display: flex;
   column-gap: 61px;
   padding: 0 0 45px 496px;
 }
 
-.gallery__txt__ref li {
+.gallery__txt--ref li {
   font-family: YesevaOne-Regular;
   font-size: 14px;
   line-height: 19px;
@@ -294,12 +292,12 @@ a {
   list-style: none;
 }
 
-.gallery__txt__ref a {
+.gallery__txt--ref a {
   position: relative;
 }
 
-.gallery__txt__ref a.g_active::after,
-.gallery__txt__ref a:hover::after {
+.gallery__txt--ref a.g-active::after,
+.gallery__txt--ref a:hover::after {
   content: "";
   position: absolute;
   display: block;
@@ -315,7 +313,7 @@ a {
   justify-content: space-between;
 }
 
-.gallery__txt__left {
+.gallery__txt--left {
   display: flex;
   flex-direction: column;
   max-width: 442px;
@@ -415,7 +413,7 @@ a {
   cursor: pointer;
 }
 
-.oc__txt__block {
+.oc__txtblock {
   padding-top: 34px;
   max-width: 680px;
   font-family: NunitoSans-Regular;
@@ -476,7 +474,7 @@ a {
 
 /* -- Types_of_Repare -- */
 
-.types__of__repair {
+.repair__types {
   width: 100%;
 }
 
@@ -603,7 +601,7 @@ a {
   color: #363636;
 }
 
-.town__right__part {
+.town__right {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -637,11 +635,6 @@ a {
   padding-top: 28px;
 }
 
-.request__form__div {
-  max-width: 386px;
-  padding-top: 48px;
-}
-
 .request__form input {
   color: #ffffff;
   border: 0;
@@ -656,7 +649,7 @@ a {
   margin: 0 0 27px 230px;
 }
 
-.btn_mod {
+.btn-mod {
   font-family: NunitoSans-Regular;
   font-style: normal;
   font-weight: 400;
@@ -772,14 +765,14 @@ a {
   background-color: #E3B873;
 }
 
-.box__pic__left {
+.pic__left {
   display: flex;
   flex-direction: column;
   align-self: flex-end;
   margin-right: 43px;
 }
 
-.box__pic__right {
+.pic__right {
   display: flex;
   flex-direction: column;
 }
@@ -819,7 +812,7 @@ a {
   color: #363636;
 }
 
-.clients_cards {
+.clients__cards {
   display: flex;
   justify-content: space-between;
 }
@@ -881,14 +874,14 @@ a {
   bottom: -27px;
 }
 
-.client__bottom__left,
-.client__bottom__right {
+.cbottom__left,
+.cbottom__right {
   display: flex;
   align-items: center;
   padding: 12px 15px 12px 17px;
 }
 
-.client__bottom__left {
+.cbottom__left {
   border-right: 0.75px solid #FFFFFF;
 }
 
@@ -918,7 +911,7 @@ a {
   margin-top: 400px;
 }
 
-.bg_img_overlay {
+.img__overlay {
   width: 100%;
   height: 100%;
   background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%,
@@ -956,7 +949,7 @@ a {
   margin-top: -1176px;
 }
 
-.qf__inner__box {
+.inner__box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -966,7 +959,7 @@ a {
   text-align: center;
 }
 
-.qf__inner__box h2 {
+.inner__box h2 {
   font-family: YesevaOne-Regular;
   font-style: normal;
   font-weight: 400;
@@ -1012,7 +1005,7 @@ a {
   width: 100%;
 }
 
-.qf__inner__box button[type='submit'] {
+.inner__box button[type='submit'] {
   width: 200px;
   height: 51px;
   background: #E3B873;
@@ -1044,5 +1037,11 @@ a {
 /* -- Footer -- */
 
 .footer {
-  padding: calc(var(--container-padding) * 2.2) 0;
+  padding: calc(var(--container-padding) * 1.5) 0;
+}
+
+.footer__img {
+  width: 88px;
+  height: 31px;
+  margin: 0 auto;
 }
